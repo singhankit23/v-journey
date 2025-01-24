@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Wish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="layer1">
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        <h1>Happy Valentine's Day, Priyal ❤️</h1>
+        <p>Priyal, you have to go through a little journey to make your final decision!</p>
+        <button class="button" onclick="goToLayer2()">Start the Journey 💖</button>
+    </div>
+
+    <div class="container hidden" id="layer2">
+        <h1>Question 1: Do you love surprises, Priyal? 🎁</h1>
+        <button class="button" onclick="goToLayer3()">Yes, I Do! 💕</button>
+        <button class="button" onclick="goToLayer1()">No, Take Me Back 😅</button>
+    </div>
+
+    <div class="container hidden" id="layer3">
+        <h1>Question 2: Am I your favorite person, Priyal? 🥰</h1>
+        <button class="button" onclick="goToLayer4()">Of Course, Ankit! 💖</button>
+        <button class="button" onclick="goToLayer1()">Hmm, Let Me Think 😜</button>
+    </div>
+
+    <div class="container hidden" id="layer4">
+        <h1>Final Question: Will you be my Valentine, Priyal? ❤️</h1>
+        <button class="button" onclick="finalDecision()">Yes, I Will, Ankit! 💌</button>
+        <button class="button" onclick="goToLayer1()">No, Let Me Restart 😅</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
